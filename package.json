@@ -1,8 +1,21 @@
 {
-  "name": "NodeJS",
+  "name": "curso-rocketseat",
   "version": "1.0.0",
-  "description": "aprendendo node",
+  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "cfonts": "^3.1.1",
+    "define-property": "^1.0.0",
+    "has-flag": "^4.0.0",
+    "is-accessor-descriptor": "^1.0.0",
+    "is-buffer": "^1.1.6",
+    "is-data-descriptor": "^1.0.0",
+    "is-descriptor": "^1.0.2",
+    "is-number": "^3.0.0",
+    "kind-of": "^6.0.3",
+    "supports-color": "^8.1.1",
+    "window-size": "^1.1.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,18 +23,11 @@
     "type": "git",
     "url": "git+https://github.com/Caiomafia/Curso-Rocketseat.git"
   },
-  "author": "",
-  "license": "MIT",
+  "keywords": [],
+  "author": "Caio Mafra ",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Caiomafia/Curso-Rocketseat/issues"
   },
-  "homepage": "https://github.com/Caiomafia/Curso-Rocketseat#readme",
-  "devDependencies": {
-    "cfonts": "^3.1.1"
-  },
-  "dependencies": {
-    "fonts": "^0.0.2",
-    "inquirer": "^9.1.2",
-    "opn": "^6.0.0"
-  }
+  "homepage": "https://github.com/Caiomafia/Curso-Rocketseat#readme"
 }

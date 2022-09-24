@@ -1,0 +1,8 @@
+//Instalando dependências
+// npm i -D
+
+//o que  enode_modules 
+//trás modulos do servido no qual não usamos 
+
+//e o package.lock.json
+// não podemos modificar apenas deixar parado
