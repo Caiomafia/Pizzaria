@@ -6,3 +6,7 @@
 
 //e o package.lock.json
 // não podemos modificar apenas deixar parado
+
+
+//executadno o srcript
+//chamando no páckage.json o index.js para start no terminal com "npm run start"
