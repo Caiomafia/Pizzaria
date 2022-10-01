@@ -66,3 +66,28 @@ Precisamos usar o comando git add para incluir as alterações de um ou vários 
 Para adicionar um único arquivo:
 
 git add <arquivo>
+
+
+6. Git commit
+Talvez esse seja o comando mais usado do Git. Quando chegamos a determinado ponto em desenvolvimento, queremos salvar nossas alterações (talvez após uma tarefa ou resolução de problema específica).
+
+Git commit é como definir um ponto de verificação no processo de desenvolvimento. Você pode voltar a esse ponto mais tarde, se necessário.
+
+Também precisamos escrever uma mensagem breve para explicar o que desenvolvemos ou alteramos no código-fonte.
+
+git commit -m "mensagem do commit"
+Importante: git commit salva suas alterações no espaço de trabalho local.
+
+
+7. Git push
+Após fazer o commit de suas alterações, a próxima coisa a fazer é enviar suas alterações ao servidor remoto. Git push faz o upload dos seus commits no repositório remoto.
+
+git push <repositório-remoto> <nome-da-branch>
+Entretanto, se a sua branch foi recém-criada, também é preciso fazer o upload da branch com o seguinte comando:
+
+git push --set-upstream <repositório-remoto> <nome-da-branch>
+
+8. Git pull
+O comando git pull é usado para obter as atualizações de um repositório remoto. Esse comando é uma combinação de git fetch e git merge, o que significa que, quando usamos git pull, ele recebe as atualizações do repositório remoto (git fetch) e aplica imediatamente as alterações mais recentes em seu espaço de trabalho local (git merge).
+
+git pull <repositório-remoto>
