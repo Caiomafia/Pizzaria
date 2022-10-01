@@ -91,3 +91,14 @@ git push --set-upstream <repositório-remoto> <nome-da-branch>
 O comando git pull é usado para obter as atualizações de um repositório remoto. Esse comando é uma combinação de git fetch e git merge, o que significa que, quando usamos git pull, ele recebe as atualizações do repositório remoto (git fetch) e aplica imediatamente as alterações mais recentes em seu espaço de trabalho local (git merge).
 
 git pull <repositório-remoto>
+
+
+
+10. Git merge
+Quando você concluir o desenvolvimento em sua branch e quando tudo funcionar bem, a etapa final é fazer o merge (mesclar ou unir, em português) da branch com a branch pai (dev ou master/main, em geral). Isso é feito com o comando git merge.
+
+Git merge, basicamente, integra sua branch com o recurso e todos os seus commits na branch de desenvolvimento (dev) ou na branch principal (master ou main). É importante lembrar que, primeiro, você precisa estar na branch específica na qual você quer fazer o merge de sua branch com o recurso.
+
+Por exemplo, ao querer fazer o merge de sua branch do recurso na branch dev:
+
+Primeiro, troque para a branch dev:
