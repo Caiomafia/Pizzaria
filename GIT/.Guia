@@ -5,3 +5,64 @@ Sistemas locais
 - muito comum e muito simples 
 - incrivelmente propensa a erros 
 - Facil de sobreescrever arquivos , caso haja uma copia errada 
+
+Vantagens sobre VCS
+- juntar a equipe em um unico codigo 
+
+
+## O QUE E O GIT ?
+- sistema de versão distribuidos 
+- Open-source 
+- Pontos na historia commit (viagem no tempo )
+- varios devs no mesmo projeto sem perde o projeto 
+
+
+
+1. Git clone
+Git clone é uma comando para baixar o código-fonte existente de um repositório remoto (como, por exemplo, o Github). Em outras palavras, git clone, basicamente, faz uma cópia idêntica da versão mais recente de um projeto em um repositório e a salva em seu computador.
+
+Há algumas maneiras de baixar o código-fonte, mas, em geral, eu prefiro a maneira de clonar com https:
+
+git clone <https://link-com-o-nome-do-repositório>
+
+
+2. Git branch
+Branches (algo como ramificações, em português) são altamente importantes no mundo do git. Usando as branches, vários desenvolvedores conseguem trabalhar em paralelo no mesmo projeto simultaneamente. Podemos usar o comando git branch para criar, listar e excluir as branches.
+
+Como criar uma branch:
+
+git branch <nome-da-branch>
+
+Esse comando criará uma branch em seu local de trabalho. Para fazer o push (algo como enviar) da nova branch para o repositório remoto, você precisa usar o comando a seguir:
+
+
+
+3. Git checkout
+Esse também é um dos comandos do Git mais usados. Para trabalhar em uma branch, primeiro, é preciso "entrar" nela. Usamos git checkout, na maioria dos casos, para trocar de uma branch para outra. Também podemos usar o comando para fazer o checkout de arquivos e commits.
+
+git checkout <nome-da-branch>
+Existem alguns passos que você precisa seguir para trocar de branch com sucesso:
+
+As alterações em sua branch atual devem estar em um commit ou em um stash antes de você fazer a troca
+A branch na qual você quer fazer o checkout deve existir no seu espaço de trabalho local
+
+4. Git status
+O comando git status nos dá todas as informações necessárias sobre a branch atual.
+
+git status
+Obtemos as seguintes informações:
+
+Se a branch em que estamos no momento está atualizada
+Se precisamos fazer o commit, push ou pull de algo
+Se os arquivos estão em fase de stage, fora dessa fase ou se não estão sendo rastreados
+Se arquivos foram criados, modificados ou excluídos
+
+
+5. Git add
+Ao criarmos, modificarmos ou excluirmos um arquivo, essas alterações acontecerão em nosso espaço de trabalho local e não serão incluídas no próximo commit (a menos que alteremos as configurações).
+
+Precisamos usar o comando git add para incluir as alterações de um ou vários arquivos em nosso próximo commit.
+
+Para adicionar um único arquivo:
+
+git add <arquivo>
