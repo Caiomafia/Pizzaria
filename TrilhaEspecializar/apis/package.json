@@ -1,0 +1,13 @@
+{
+  "name": "apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Apis.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Caio Mafra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
