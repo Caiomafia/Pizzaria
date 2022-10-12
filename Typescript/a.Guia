@@ -1,0 +1,144 @@
+## por que usar o typeScript ??
+
+***** TypeScript ******
+
+function Showticket(user:string , ticket:number){
+console.log(`Seu nome  e ${user ?? 'userPadrão'} e seu ticket e ${ticket}  `)
+}
+
+Showticket('Caio Mafra' , 123)
+
+
+**** js **** 
+
+function Showticket(user, ticket) {
+    console.log(`Seu nome  e ${user !== null && user !== void 0 ? user : 'userPadrão'} e seu ticket e ${ticket}  `);
+}
+Showticket('Caio Mafra', 123);
+
+
+ *****Tipos primitivos ****
+Esses são os tipos primitivos que podemos utilizar no TypeScript:
+
+let loading: boolean;
+loading = false;
+
+let email: string;
+email = "joao@email.com";
+
+let price: number;
+price = 10.50;
+price = 10;
+
+****  Matrizes  ******
+Existem duas maneiras de tipar arrays no TypeScript, confira os exemplos:
+
+let numbers: number[];
+numbers = [1,2,3,4,5,6];
+
+let users: Array<string>;
+users = ['Rodrigo', 'João'];
+
+
+
+ ***** Union *****
+O Operador Union, representado pelo pipe | nos permite adicionar mais de um tipo na variável. Vamos ao exemplo:
+
+function printUserId(id: number | string) {
+    console.log(`O ID do usuário é: ${id}`);
+}
+
+printUserId(101);
+printUserId("101");
+
+// Dessa forma, podemos passar tanto number quanto string
+
+
+
+
+ ***  Generics ****
+
+O generic no TypeScript nos permite reutilizar uma determinada implementação de código, de forma tipada. Para representar um generic, nós declaramos ele dessa forma <T> (podendo ser utilizado qualquer outra letra, existem as convenções que podemos seguir:
+
+<S> → Representando State <T> → Representando Type <K> → Representando Key <V> → Representando Value <E> → Representando Element
+
+Exemplo de um trecho de código utilizando generics:
+
+function useState<T>() {
+    let state: T;
+
+    function get(){
+        return state;
+    }
+
+    function set(newValue: T){
+        state = newValue;
+    }
+
+    return { get, set}
+}
+
+let newState = useState();
+newState.get();
+newState.set("João");
+newState.set(123);
+
+
+
+ ****    Type    *****
+ Para não ficar sempre repetindo os tipos para todas as variáveis podemos criar Types para cada uma delas.
+
+Veja o exemplo a seguir:
+
+type IdType = string | number | undefined;
+
+let userId: IdType;
+let adminId: IdType;
+
+userId = 1;
+userId = '1';
+userId = undefined;
+
+adminId = 1;
+adminId = '2';
+adminId = undefined;
+
+
+ **** Type Assertions *****
+Asserção de tipo normalmente é utilizado quando o TypeScript não sabe qual é a tipagem em um determinado objeto.
+
+Para contornarmos isso, podemos criar um type informando quais são as propriedades desse objeto.
+
+type UserResponse = {
+    id: number;
+    name: string;
+    avatar: string;
+}
+
+let userResponse = {} as UserResponse;
+
+
+
+ *****   Intersecção de tipos ******
+A intersecção de tipos como o próprio nome já diz, podemos unir dois tipos e usar as suas propriedades dentro de um objeto.
+
+Segue o exemplo abaixo:
+
+type User = {
+    id: number,
+    name: string,
+}
+
+type Char = {
+    nickname: string,
+    level: number
+}
+
+type PlayerInfo = User & Char;
+
+let info: PlayerInfo = {
+    id: 1,
+    name: 'João Inácio',
+    nickname: 'birobirobiro',
+    level: 50
+}
