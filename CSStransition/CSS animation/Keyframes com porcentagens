@@ -1,0 +1,12 @@
+/*Essa é uma forma útil quando queremos ter uma animação que execute vários comportamentos em sua duração, então podemos colocar o inicio da animação como 0% e o fim da animação como 100%, usando qualquer outro valor de porcentagem 
+os referimos ao momento da duração daquela animação em porcentagem e definimos seu comportamento.
+
+
+
+@keyframes example-two {
+    0%{background-color: aquamarine;}
+    25%{background-color: beige;}
+    50%{background-color: brown;}
+    75%{background-color: chartreuse;}
+    100%{background-color: azure;}
+}

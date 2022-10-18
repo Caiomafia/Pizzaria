@@ -1,2 +1,11 @@
 ## Quando temos alguma propriedade css que muda de valor em um hover, focus ou outro tipo de interação,
  podemos usar o transition para suavizar a mudança do ponto A ate o ponto B
+
+
+
+
+
+
+ ##Transition property all##
+ transition-property: all, é usado para aplicar transição em todos os
+elemento quantificáveisdisponíveis e que estejam sofrendo alteração
