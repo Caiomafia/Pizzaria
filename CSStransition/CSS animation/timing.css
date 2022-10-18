@@ -1,0 +1,26 @@
+.linear{ 
+    width: 100px;
+    height: 50px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name:example;
+    animation-duration:  2s;
+}
+
+
+
+@keyframes example {
+ 
+    from{ left: 0px; right: 0;}
+
+    to{left: calc(100% - 100%);
+
+
+
+
+
+
+
+    }
+
+}
