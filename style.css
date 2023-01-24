@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Josefin+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+
+
+
 *{
     margin: 0%;
     padding: 0%;
@@ -8,3 +13,83 @@
 }
 
 
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.2%;
+    overflow-x: hidden;
+}
+
+/*Menu*/
+.content{
+width: 100vw;
+height: 70px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: fixed;
+background-color: #1f1e1f;
+padding-left: 30rem;
+}
+
+.logo{
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 { 
+    color: #fff;
+    font-size: 1.6rem;
+    
+}
+
+
+.logo img { 
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+
+.content .list-menu li a:hover {
+    background-color: #333;
+    border-bottom: 4px solid #ffc506;
+    color:#ffc506 ;
+ }
+
+
+
+.content .list-menu li a {
+    padding: 3rem 1rem 2rem 1rem ;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition:  all 200ms ease-in;
+
+}
+
+
+/*Primeira sessão */
+
+.first-section{ 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+
+}
