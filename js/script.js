@@ -5,13 +5,28 @@ const seleciona = (elemento) => document.querySelector(elemento)
 const selecionaTodos = (elemento) => document.querySelectorAll(elemento)
 
 const abrirModal = () =>{
-    seleciona('.pizza-item a').style.opacity = 0
-    seleciona('.pizza-item a').style.display = 'flex'
+    seleciona('.pizzaWindowArea').style.opacity = 0
+    seleciona('.pizzaWindowArea').style.display = 'flex'
+    setInterval(() => {
+        seleciona('.pizzaWindowArea').style.opacity = 1
+    } , 150)
 }
 
 
+const fecharModal = () =>{
+    seleciona('.pizzaInfo--cancelButton ').style.opacity = 0 
+    setInterval(() => {
+        seleciona('.pizzaWindowArea').style.display = 'none'
+     } , 5000)
+}
 
-
+/*obotão fechar */
+const botoesfechar = () => {
+    selecionaTodos('.pizzaInfo--cancelButton , .pizzaInfo--cancelMobileButton ').forEach(item => {
+        item.addEventListener('click' , fecharModal)
+        
+    });
+} 
 
 
 pizzaJson.map((item , index) => {
@@ -32,7 +47,7 @@ pizzaItem.querySelector('.pizza-item a ').addEventListener('click' , (e) => {
     e.preventDefault()
     console.log(e)
  //abrir modal
-    document.querySelector('.pizzaWindowArea').style.display = 'flex'
+    abrirModal();
     //preenchecer
     document.querySelector('.pizzaBig   img ').src = item.img
     document.querySelector('.pizzaInfo h1').innerHTML = item.name
@@ -49,11 +64,7 @@ pizzaItem.querySelector('.pizza-item a ').addEventListener('click' , (e) => {
 })
 
 //cancelar 
-document.querySelector(' .pizzaInfo--cancelButton ').addEventListener('click' , (e) => {
-    
-   document.querySelector('.pizzaWindowArea').style.display = 'none'
-
-})
+botoesfechar()
 // voltar modo mobile
 document.querySelector('.pizzaInfo--cancelMobileButton').addEventListener('click' , () => {
     document.querySelector('.pizzaWindowArea').style.display = 'none'
