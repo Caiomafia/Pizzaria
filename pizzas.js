@@ -6,5 +6,6 @@ let pizzaJson = [
     {id:5, name:'Portuguesa', img:'images/pizza5.png', price:[20.00,23.00,25.00], sizes:['P', 'M', 'G'], description:'Molho de tomate, mussarela, presunto, ovos, cebolas, pimentão, azeitona  e orégano'},
     {id:6, name:'Moda da Casa', img:'images/pizza6.png', price:[20.00,23.00,25.00], sizes:['P', 'M', 'G'], description:'Molho de tomate, mussarela, carne de sol, tomates em cubos, coentro, cebola, azeitona, catupiry e orégano'},
     {id:7, name:'Banana com canela', img:'images/pizza7.png', price:[20.00,23.00,25.00], sizes:['P', 'M', 'G'], description:'Mussarela, banana, canela e açúcar'},
-    {id:8, name:'Chocolate com morango', img:'images/pizza8.png', price:[20.00,23.00,25.00], sizes:['P', 'M', '860g'], description:'Creme de leite, lascas de chocolate e morangos'}
+    {id:8, name:'Chocolate com morango', img:'images/pizza8.png', price:[20.00,23.00,25.00], sizes:['P', 'M', '860g'], description:'Creme de leite, lascas de chocolate e morangos'},
+    {id:9, name:'Chocolate com morango', img:'images/pizza8.png', price:[20.00,23.00,25.00], sizes:['P', 'M', '860g'], description:'Creme de leite, lascas de chocolate e morangos'}
 ];
