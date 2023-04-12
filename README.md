@@ -29,12 +29,7 @@ Para visualizar o cardápio de pizzas, basta acessar o arquivo index.html no nav
 
 ## Autor
 
-Este cardápio virtual de pizzas foi criado por ChatGPT, um modelo de linguagem natural desenvolvido pela OpenAI.
-
-
-
-
-
+[Caio Mafra]
 
 
 
