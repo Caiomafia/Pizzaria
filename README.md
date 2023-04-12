@@ -1,10 +1,10 @@
-<div align="center">
+
   
 
 # Cardápio de Pizzas
 
 Este é um cardápio virtual de pizzas feito com HTML, CSS e JavaScript. Neste site você poderá conferir a lista de sabores de pizzas disponíveis, selecionar a sua preferida e fazer um pedido.
-<div>
+
 ## Funcionalidades
 
 - Visualização dos sabores disponíveis de pizzas[x]
