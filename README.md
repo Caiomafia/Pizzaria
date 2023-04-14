@@ -3,7 +3,7 @@
 
 # Cardápio de Pizzas
 
-Este é um cardápio virtual de pizzas feito com HTML, CSS e JavaScript. Neste site você poderá conferir a lista de sabores de pizzas disponíveis, selecionar a sua preferida e fazer um pedido.
+Este é um cardápio virtual de pizzas feito com HTML, CSS e JavaScript. Neste site você poderá conferir a lista de sabores de pizzas disponíveis, selecionar a sua preferida e fazer um pedido. link(https://caiomafia.github.io/Pizzaria/}
 
 ## Funcionalidades
 
